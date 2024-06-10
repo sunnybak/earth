@@ -1,0 +1,247 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.257 64bit -- 9 Oct 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: avantis1   Host: laguna.eecs.uci.edu   HostID: C8801755   PID: 17759
+Memory  available: 1.3581 GB  physical: 134.9236 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.1] ( 28 ),  2 [1292.6] ( 30 ),  4 [1293.6] ( 32 )
+                 6 [1205.4] ( 34 ),  8 [1275.4] ( 36 ), 10 [1270.0] ( 38 )
+                12 [1300.2] ( 40 ), 14 [1199.6] ( 42 ), 16 [1299.9] ( 44 )
+                18 [1224.9] ( 46 ), 20 [1292.4] ( 48 ), 22 [1293.0] ( 50 )
+                24 [1295.0] ( 52 ), 26 [1200.3] ( 54 )
+        1:       1 [1200.2] ( 29 ),  3 [1216.4] ( 31 ),  5 [1202.1] ( 33 )
+                 7 [1206.9] ( 35 ),  9 [1200.1] ( 37 ), 11 [1204.7] ( 39 )
+                13 [1200.4] ( 41 ), 15 [1200.2] ( 43 ), 17 [1200.7] ( 45 )
+                19 [1200.1] ( 47 ), 21 [1200.6] ( 49 ), 23 [1200.0] ( 51 )
+                25 [1200.4] ( 53 ), 27 [1200.7] ( 55 )
+        
+System load averages (1min, 5min, 15min) : 0.0 %, 0.3 %, 0.4 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on laguna.eecs.uci.edu at 5:39:58 PM, Wed Feb 7, 2024 (process id: 17759).
+Current working directory: /users/ugrad/avantis1/cadence/simulation/TB_Inv_based_51_stage_RO/spectre/schematic/netlist
+Command line:
+    /ecelib/linware/cadence/mmsim/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_54212_4 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 17759
+
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /users/ugrad/avantis1/cadence/simulation/TB_Inv_based_51_stage_RO/spectre/schematic/netlist/input.scs
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/ugrad/avantis1/EECS_270AP/45n270AModels.sp
+Time for NDB Parsing: CPU = 112.339 ms, elapsed = 451.979 ms.
+Time accumulated: CPU = 187.526 ms, elapsed = 451.991 ms.
+Peak resident memory used = 35.3 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  4 (2.2 %)       5 (4.5 %)       7 (2.2 %)       9 (6.5 %)
+                12 (4.3 %)      14 (2.2 %)      20 (13.3 %)     22 (11.1 %)
+                24 (4.4 %)      30 (30.4 %)     31 (2.3 %)      32 (4.3 %)
+                33 (4.5 %)      34 (6.5 %)      35 (4.4 %)      
+        Other   
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 38.828 ms, elapsed = 97.8582 ms.
+Time accumulated: CPU = 226.616 ms, elapsed = 550.107 ms.
+Peak resident memory used = 41.6 Mbytes.
+
+Time for EDB Visiting: CPU = 7.902 ms, elapsed = 7.90405 ms.
+Time accumulated: CPU = 234.79 ms, elapsed = 558.28 ms.
+Peak resident memory used = 42.2 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `0'.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 7
+              bsim4 10    
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 3.611 ms, elapsed = 13.5701 ms.
+Time accumulated: CPU = 238.654 ms, elapsed = 572.101 ms.
+Peak resident memory used = 43.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_54212_4, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 3 iterations.
+Total time required for dc analysis `dcOp': CPU = 4.216 ms, elapsed = 17.6198 ms.
+Time accumulated: CPU = 246.712 ms, elapsed = 758.399 ms.
+Peak resident memory used = 44.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 30 ns)
+************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    There are 1 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Initial condition computed for node Vout5 is in error by 461.814 uV.
+        Decrease `rforce' to reduce error in computed initial conditions.  However, setting rforce too small may result in convergence difficulties or in the matrix becoming singular.
+
+DC simulation time: CPU = 1.084 ms, elapsed = 1.08385 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 30 ns
+    step = 30 ps
+    maxstep = 600 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   7       (voltage)
+
+    tran: time = 750.7 ps     (2.5 %), step = 4.343 ps    (14.5 m%)
+    tran: time = 2.25 ns      (7.5 %), step = 3.871 ps    (12.9 m%)
+    tran: time = 3.753 ns    (12.5 %), step = 3.984 ps    (13.3 m%)
+    tran: time = 5.254 ns    (17.5 %), step = 4.451 ps    (14.8 m%)
+    tran: time = 6.753 ns    (22.5 %), step = 4.08 ps     (13.6 m%)
+    tran: time = 8.251 ns    (27.5 %), step = 3.268 ps    (10.9 m%)
+    tran: time = 9.752 ns    (32.5 %), step = 3.098 ps    (10.3 m%)
+    tran: time = 11.25 ns    (37.5 %), step = 3.245 ps    (10.8 m%)
+    tran: time = 12.75 ns    (42.5 %), step = 3.656 ps    (12.2 m%)
+    tran: time = 14.25 ns    (47.5 %), step = 3.541 ps    (11.8 m%)
+    tran: time = 15.75 ns    (52.5 %), step = 3.936 ps    (13.1 m%)
+    tran: time = 17.25 ns    (57.5 %), step = 4.091 ps    (13.6 m%)
+    tran: time = 18.75 ns    (62.5 %), step = 3.925 ps    (13.1 m%)
+    tran: time = 20.25 ns    (67.5 %), step = 3.062 ps    (10.2 m%)
+    tran: time = 21.75 ns    (72.5 %), step = 3.223 ps    (10.7 m%)
+    tran: time = 23.25 ns    (77.5 %), step = 4.651 ps    (15.5 m%)
+    tran: time = 24.75 ns    (82.5 %), step = 3.634 ps    (12.1 m%)
+    tran: time = 26.25 ns    (87.5 %), step = 3.602 ps      (12 m%)
+    tran: time = 27.75 ns    (92.5 %), step = 4.066 ps    (13.6 m%)
+    tran: time = 29.25 ns    (97.5 %), step = 3.48 ps     (11.6 m%)
+Number of accepted tran steps =             8116
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (7.1 %)       2 (7.5 %)       4 (1.3 %)       5 (2.5 %)
+                 7 (1.9 %)       9 (1.9 %)      12 (1.3 %)      20 (4.4 %)
+                22 (6.3 %)      24 (9.6 %)      26 (47.8 %)     30 (8.8 %)
+                32 (1.3 %)      33 (1.3 %)      34 (1.9 %)      35 (1.3 %)
+        Other   
+Initial condition solution time: CPU = 1.154 ms, elapsed = 1.15609 ms.
+Intrinsic tran analysis time:    CPU = 751.475 ms, elapsed = 780.312 ms.
+Total time required for tran analysis `tran': CPU = 757.297 ms, elapsed = 795.116 ms.
+Time accumulated: CPU = 1.01247 s, elapsed = 1.63183 s.
+Peak resident memory used = 46.8 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...

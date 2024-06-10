@@ -1,0 +1,562 @@
+
+Spectre (R) Circuit Simulator
+Version 23.1.0.063 64bit -- 10 Jun 2023
+Copyright (C) 1989-2023 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: avantis1   Host: hpc3-14-04   HostID: F00A113A   PID: 740761
+Memory  available: 168.4751 GB  physical: 201.9309 GB
+Linux   : Rocky Linux release 8.8 (Green Obsidian)
+CPU Type: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
+        Socket: Processors [Frequency]
+        0:       0 [3100.0],  1 [2400.0],  2 [2400.0],  3 [3100.0],  4 [2400.0]
+                 5 [2400.0],  6 [2400.0],  7 [2400.0],  8 [2400.0],  9 [2400.0]
+                10 [2400.0], 11 [2400.0], 12 [2400.0], 13 [2400.0], 14 [3100.0]
+                15 [2400.0], 16 [3100.0], 17 [3100.0], 18 [3100.0], 19 [3100.0]
+        1:      20 [3100.0], 21 [2329.0], 22 [2546.4], 23 [3100.0], 24 [2400.0]
+                25 [2400.0], 26 [2400.0], 27 [2400.0], 28 [2400.0], 29 [2400.0]
+                30 [2400.0], 31 [2400.0], 32 [2400.0], 33 [2400.0], 34 [2400.0]
+                35 [2400.0], 36 [3100.0], 37 [3100.0], 38 [3100.0], 39 [2400.0]
+        
+System load averages (1min, 5min, 15min) : 36.6 %, 30.3 %, 31.3 %
+Affinity is set by user to processors:  0 
+
+Simulating `input.scs' on hpc3-14-04 at 9:51:08 PM, Fri Mar 15, 2024 (process id: 740761).
+Current working directory: /data/homezvol2/avantis1/simulation/CAPSTONE_AVI/TB_RO_101_stage/maestro_Spectre_Liberal/results/maestro/ExplorerRun.0/1/CAPSTONE_AVI_TB_INV_101_stage_RO_1/netlist
+Command line:
+    /data/opt/apps/cadence/SPECTRE231/tools.lnx86/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out -format psfxl -raw  \
+        ../psf +lqtimeout 900 -maxw 5 -maxn 5 -env ade  \
+        +adespetkn=0001089D13A302B663E41FB550AF0DF415A679A322D5069144BF588C12F604E07EF416DC01A319B562BB63D379E03FA945A33CBD38B73BEB01A11CC35BF64F9200C879D15D9175FF34986CD60ABF07E240F137D344A540FE19A915BE4BAD17B258F762984DA04DE340A279D136C874D334981C243DC351E8516D0000367A  \
+        +dcopt -ahdllibdir  \
+        /data/homezvol2/avantis1/simulation/CAPSTONE_AVI/TB_RO_101_stage/maestro_Spectre_Liberal/results/maestro/ExplorerRun.0/sharedData/CDS/ahdl/input.ahdlSimDB  \
+        +logstatus
+
+Simulation Id: KzowpU59O8xOQB4P
+Licensing Information:
+[21:51:08.013193] Configured Lic search path (22.01-s002): 5280@license.eecs.uci.edu
+
+Licensing Information:
+[21:51:08.001419] Periodic Lic check successful
+
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /data/homezvol2/avantis1/simulation/CAPSTONE_AVI/TB_RO_101_stage/maestro_Spectre_Liberal/results/maestro/ExplorerRun.0/1/CAPSTONE_AVI_TB_INV_101_stage_RO_1/netlist/input.scs
+Reading file:  /data/opt/apps/cadence/SPECTRE231/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /data/homezvol2/avantis1/16nm.sp
+Time for NDB Parsing: CPU = 70.642 ms, elapsed = 156.963 ms.
+Time accumulated: CPU = 170.288 ms, elapsed = 156.966 ms.
+Peak resident memory used = 139 Mbytes.
+
+Time for Elaboration: CPU = 19.196 ms, elapsed = 20.0689 ms.
+Time accumulated: CPU = 189.565 ms, elapsed = 177.114 ms.
+Peak resident memory used = 147 Mbytes.
+
+
+Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 4.068 ms, elapsed = 4.08578 ms.
+Time accumulated: CPU = 193.717 ms, elapsed = 181.283 ms.
+Peak resident memory used = 149 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `0'.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+           homotopy = 5
+               gmin = 1e-12
+             rforce = 0.1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+     dc_pivot_check = yes
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 103
+              bsim4 202   
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 7.422 ms, elapsed = 8.03089 ms.
+Time accumulated: CPU = 201.21 ms, elapsed = 189.383 ms.
+Peak resident memory used = 153 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(VDD) = 700 mV
+I: I(V1:p) = 178 uA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 11.749 ms, elapsed = 12.4319 ms.
+Total time required for dc analysis `dcOp': CPU = 11.786 ms, elapsed = 12.4738 ms, util. = 94.5%.
+Time accumulated: CPU = 218.871 ms, elapsed = 207.859 ms.
+Peak resident memory used = 156 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+***********************************************
+Transient Analysis `tran': time = (0 s -> 1 us)
+***********************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    There are 1 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I53.Vout22) = 5.70884 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Initial condition computed for node Vout101 is in error by 3.38683 uV.
+        Decrease `rforce' to reduce error in computed initial conditions.  However, setting rforce too small may result in convergence difficulties or in the matrix becoming singular.
+
+DC simulation time: CPU = 19.83 ms, elapsed = 20.2081 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1 us
+    step = 1 ns
+    maxstep = 10 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   103     (voltage)
+                 ic     1       
+
+    tran: time = 3.014 ns    (301 m%), step = 379.4 fs    (37.9 u%)
+    tran: time = 6.429 ns    (643 m%), step = 319.5 fs    (31.9 u%)
+    tran: time = 9.839 ns    (984 m%), step = 345 fs      (34.5 u%)
+    tran: time = 13.24 ns    (1.32 %), step = 281.5 fs    (28.1 u%)
+    tran: time = 16.66 ns    (1.67 %), step = 326.7 fs    (32.7 u%)
+    tran: time = 20.08 ns    (2.01 %), step = 318.7 fs    (31.9 u%)
+    tran: time = 23.5 ns     (2.35 %), step = 331.6 fs    (33.2 u%)
+    tran: time = 25 ns        (2.5 %), step = 276.9 fs    (27.7 u%)
+    tran: time = 28.42 ns    (2.84 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 31.84 ns    (3.18 %), step = 322.5 fs    (32.2 u%)
+    tran: time = 35.26 ns    (3.53 %), step = 281.6 fs    (28.2 u%)
+    tran: time = 38.68 ns    (3.87 %), step = 322.3 fs    (32.2 u%)
+    tran: time = 42.11 ns    (4.21 %), step = 284.2 fs    (28.4 u%)
+    tran: time = 45.45 ns    (4.54 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 48.87 ns    (4.89 %), step = 408.1 fs    (40.8 u%)
+    tran: time = 52.28 ns    (5.23 %), step = 285.5 fs    (28.5 u%)
+    tran: time = 55.59 ns    (5.56 %), step = 322.4 fs    (32.2 u%)
+    tran: time = 59.01 ns     (5.9 %), step = 351.5 fs    (35.1 u%)
+    tran: time = 62.42 ns    (6.24 %), step = 338.8 fs    (33.9 u%)
+    tran: time = 65.84 ns    (6.58 %), step = 311.4 fs    (31.1 u%)
+    tran: time = 69.26 ns    (6.93 %), step = 315.4 fs    (31.5 u%)
+    tran: time = 72.67 ns    (7.27 %), step = 305.8 fs    (30.6 u%)
+    tran: time = 75 ns        (7.5 %), step = 323.5 fs    (32.4 u%)
+    tran: time = 78.42 ns    (7.84 %), step = 322.3 fs    (32.2 u%)
+    tran: time = 81.83 ns    (8.18 %), step = 360.8 fs    (36.1 u%)
+    tran: time = 85.25 ns    (8.52 %), step = 294 fs      (29.4 u%)
+    tran: time = 88.67 ns    (8.87 %), step = 321.1 fs    (32.1 u%)
+    tran: time = 92.09 ns    (9.21 %), step = 318.9 fs    (31.9 u%)
+    tran: time = 95.51 ns    (9.55 %), step = 318 fs      (31.8 u%)
+    tran: time = 98.92 ns    (9.89 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 102.3 ns    (10.2 %), step = 293.9 fs    (29.4 u%)
+    tran: time = 105.6 ns    (10.6 %), step = 424.4 fs    (42.4 u%)
+    tran: time = 109.1 ns    (10.9 %), step = 325 fs      (32.5 u%)
+    tran: time = 112.5 ns    (11.2 %), step = 315.7 fs    (31.6 u%)
+    tran: time = 115.9 ns    (11.6 %), step = 379.2 fs    (37.9 u%)
+    tran: time = 119.3 ns    (11.9 %), step = 408.6 fs    (40.9 u%)
+    tran: time = 122.7 ns    (12.3 %), step = 345.7 fs    (34.6 u%)
+    tran: time = 125 ns      (12.5 %), step = 370.3 fs      (37 u%)
+    tran: time = 128.4 ns    (12.8 %), step = 335.5 fs    (33.5 u%)
+    tran: time = 131.8 ns    (13.2 %), step = 411.5 fs    (41.2 u%)
+    tran: time = 135.3 ns    (13.5 %), step = 304.5 fs    (30.5 u%)
+    tran: time = 138.7 ns    (13.9 %), step = 319.3 fs    (31.9 u%)
+    tran: time = 142.1 ns    (14.2 %), step = 276 fs      (27.6 u%)
+    tran: time = 145.5 ns    (14.6 %), step = 307.7 fs    (30.8 u%)
+    tran: time = 149 ns      (14.9 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 152.4 ns    (15.2 %), step = 345.1 fs    (34.5 u%)
+    tran: time = 155.7 ns    (15.6 %), step = 380.4 fs      (38 u%)
+    tran: time = 159.1 ns    (15.9 %), step = 329.7 fs      (33 u%)
+    tran: time = 162.5 ns    (16.3 %), step = 307.9 fs    (30.8 u%)
+    tran: time = 165.9 ns    (16.6 %), step = 293.6 fs    (29.4 u%)
+    tran: time = 169.4 ns    (16.9 %), step = 329.6 fs      (33 u%)
+    tran: time = 172.8 ns    (17.3 %), step = 335.4 fs    (33.5 u%)
+    tran: time = 175 ns      (17.5 %), step = 307.7 fs    (30.8 u%)
+    tran: time = 178.4 ns    (17.8 %), step = 344.4 fs    (34.4 u%)
+    tran: time = 181.8 ns    (18.2 %), step = 345.9 fs    (34.6 u%)
+    tran: time = 185.3 ns    (18.5 %), step = 319.3 fs    (31.9 u%)
+    tran: time = 188.7 ns    (18.9 %), step = 394.1 fs    (39.4 u%)
+    tran: time = 192.1 ns    (19.2 %), step = 318 fs      (31.8 u%)
+    tran: time = 195.5 ns    (19.6 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 199 ns      (19.9 %), step = 285.4 fs    (28.5 u%)
+    tran: time = 202.4 ns    (20.2 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 205.8 ns    (20.6 %), step = 322.5 fs    (32.2 u%)
+    tran: time = 209.1 ns    (20.9 %), step = 380.4 fs      (38 u%)
+    tran: time = 212.5 ns    (21.3 %), step = 350.8 fs    (35.1 u%)
+    tran: time = 215.9 ns    (21.6 %), step = 274.3 fs    (27.4 u%)
+    tran: time = 219.4 ns    (21.9 %), step = 315.7 fs    (31.6 u%)
+    tran: time = 222.8 ns    (22.3 %), step = 351.4 fs    (35.1 u%)
+    tran: time = 225 ns      (22.5 %), step = 365.9 fs    (36.6 u%)
+    tran: time = 228.4 ns    (22.8 %), step = 326.7 fs    (32.7 u%)
+    tran: time = 231.8 ns    (23.2 %), step = 345.1 fs    (34.5 u%)
+    tran: time = 235.3 ns    (23.5 %), step = 333 fs      (33.3 u%)
+    tran: time = 238.7 ns    (23.9 %), step = 324.9 fs    (32.5 u%)
+    tran: time = 242.1 ns    (24.2 %), step = 305.8 fs    (30.6 u%)
+    tran: time = 245.5 ns    (24.6 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 248.9 ns    (24.9 %), step = 394.9 fs    (39.5 u%)
+    tran: time = 252.4 ns    (25.2 %), step = 285.4 fs    (28.5 u%)
+    tran: time = 255.8 ns    (25.6 %), step = 317.3 fs    (31.7 u%)
+    tran: time = 259.1 ns    (25.9 %), step = 367.1 fs    (36.7 u%)
+    tran: time = 262.5 ns    (26.3 %), step = 321 fs      (32.1 u%)
+    tran: time = 265.9 ns    (26.6 %), step = 322.3 fs    (32.2 u%)
+    tran: time = 269.3 ns    (26.9 %), step = 322.5 fs    (32.3 u%)
+    tran: time = 272.8 ns    (27.3 %), step = 281.7 fs    (28.2 u%)
+    tran: time = 275 ns      (27.5 %), step = 293.8 fs    (29.4 u%)
+    tran: time = 278.4 ns    (27.8 %), step = 344.8 fs    (34.5 u%)
+    tran: time = 281.8 ns    (28.2 %), step = 315.6 fs    (31.6 u%)
+    tran: time = 285.3 ns    (28.5 %), step = 424.7 fs    (42.5 u%)
+    tran: time = 288.7 ns    (28.9 %), step = 329.3 fs    (32.9 u%)
+    tran: time = 292.1 ns    (29.2 %), step = 298.2 fs    (29.8 u%)
+    tran: time = 295.5 ns    (29.6 %), step = 319.5 fs    (31.9 u%)
+    tran: time = 298.9 ns    (29.9 %), step = 360.8 fs    (36.1 u%)
+    tran: time = 302.4 ns    (30.2 %), step = 294.6 fs    (29.5 u%)
+    tran: time = 305.8 ns    (30.6 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 309.1 ns    (30.9 %), step = 314.5 fs    (31.5 u%)
+    tran: time = 312.5 ns    (31.3 %), step = 325 fs      (32.5 u%)
+    tran: time = 315.9 ns    (31.6 %), step = 412 fs      (41.2 u%)
+    tran: time = 319.3 ns    (31.9 %), step = 304.5 fs    (30.4 u%)
+    tran: time = 322.8 ns    (32.3 %), step = 285.4 fs    (28.5 u%)
+    tran: time = 325 ns      (32.5 %), step = 381.7 fs    (38.2 u%)
+    tran: time = 328.4 ns    (32.8 %), step = 391.5 fs    (39.2 u%)
+    tran: time = 331.8 ns    (33.2 %), step = 379.3 fs    (37.9 u%)
+    tran: time = 335.3 ns    (33.5 %), step = 335.5 fs    (33.5 u%)
+    tran: time = 338.7 ns    (33.9 %), step = 322.6 fs    (32.3 u%)
+    tran: time = 342.1 ns    (34.2 %), step = 323.8 fs    (32.4 u%)
+    tran: time = 345.5 ns    (34.6 %), step = 360.8 fs    (36.1 u%)
+    tran: time = 348.9 ns    (34.9 %), step = 345.1 fs    (34.5 u%)
+    tran: time = 352.4 ns    (35.2 %), step = 334.3 fs    (33.4 u%)
+    tran: time = 355.8 ns    (35.6 %), step = 382 fs      (38.2 u%)
+    tran: time = 359.2 ns    (35.9 %), step = 281.8 fs    (28.2 u%)
+    tran: time = 362.6 ns    (36.3 %), step = 321 fs      (32.1 u%)
+    tran: time = 366 ns      (36.6 %), step = 338.8 fs    (33.9 u%)
+    tran: time = 369.4 ns    (36.9 %), step = 424.5 fs    (42.4 u%)
+    tran: time = 372.9 ns    (37.3 %), step = 366.6 fs    (36.7 u%)
+    tran: time = 375 ns      (37.5 %), step = 274.3 fs    (27.4 u%)
+    tran: time = 378.4 ns    (37.8 %), step = 332.8 fs    (33.3 u%)
+    tran: time = 381.9 ns    (38.2 %), step = 354.7 fs    (35.5 u%)
+    tran: time = 385.3 ns    (38.5 %), step = 319.1 fs    (31.9 u%)
+    tran: time = 388.7 ns    (38.9 %), step = 345.9 fs    (34.6 u%)
+    tran: time = 392.2 ns    (39.2 %), step = 317 fs      (31.7 u%)
+    tran: time = 395.6 ns    (39.6 %), step = 366.5 fs    (36.7 u%)
+    tran: time = 399 ns      (39.9 %), step = 322.6 fs    (32.3 u%)
+    tran: time = 402.4 ns    (40.2 %), step = 394.1 fs    (39.4 u%)
+    tran: time = 405.9 ns    (40.6 %), step = 394.1 fs    (39.4 u%)
+    tran: time = 409.3 ns    (40.9 %), step = 285.3 fs    (28.5 u%)
+    tran: time = 412.6 ns    (41.3 %), step = 322.2 fs    (32.2 u%)
+    tran: time = 416.1 ns    (41.6 %), step = 344.8 fs    (34.5 u%)
+    tran: time = 419.5 ns    (41.9 %), step = 340.3 fs      (34 u%)
+    tran: time = 422.9 ns    (42.3 %), step = 382.5 fs    (38.3 u%)
+    tran: time = 425 ns      (42.5 %), step = 326.7 fs    (32.7 u%)
+    tran: time = 428.4 ns    (42.8 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 431.9 ns    (43.2 %), step = 319.4 fs    (31.9 u%)
+    tran: time = 435.3 ns    (43.5 %), step = 305.1 fs    (30.5 u%)
+    tran: time = 438.7 ns    (43.9 %), step = 411.7 fs    (41.2 u%)
+    tran: time = 442.2 ns    (44.2 %), step = 324.9 fs    (32.5 u%)
+    tran: time = 445.6 ns    (44.6 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 449 ns      (44.9 %), step = 281.6 fs    (28.2 u%)
+    tran: time = 452.4 ns    (45.2 %), step = 338.7 fs    (33.9 u%)
+    tran: time = 455.9 ns    (45.6 %), step = 281.8 fs    (28.2 u%)
+    tran: time = 459.3 ns    (45.9 %), step = 424.7 fs    (42.5 u%)
+    tran: time = 462.6 ns    (46.3 %), step = 315.4 fs    (31.5 u%)
+    tran: time = 466.1 ns    (46.6 %), step = 293.6 fs    (29.4 u%)
+    tran: time = 469.5 ns    (46.9 %), step = 426.6 fs    (42.7 u%)
+    tran: time = 472.9 ns    (47.3 %), step = 345 fs      (34.5 u%)
+    tran: time = 475 ns      (47.5 %), step = 334.7 fs    (33.5 u%)
+    tran: time = 478.4 ns    (47.8 %), step = 424.9 fs    (42.5 u%)
+    tran: time = 481.8 ns    (48.2 %), step = 366.5 fs    (36.6 u%)
+    tran: time = 485.2 ns    (48.5 %), step = 308.7 fs    (30.9 u%)
+    tran: time = 488.7 ns    (48.9 %), step = 298.2 fs    (29.8 u%)
+    tran: time = 492.1 ns    (49.2 %), step = 365 fs      (36.5 u%)
+    tran: time = 495.5 ns    (49.6 %), step = 334.2 fs    (33.4 u%)
+    tran: time = 499 ns      (49.9 %), step = 333 fs      (33.3 u%)
+    tran: time = 502.4 ns    (50.2 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 505.8 ns    (50.6 %), step = 344.4 fs    (34.4 u%)
+    tran: time = 509.2 ns    (50.9 %), step = 318 fs      (31.8 u%)
+    tran: time = 512.5 ns    (51.3 %), step = 294.2 fs    (29.4 u%)
+    tran: time = 516 ns      (51.6 %), step = 424.5 fs    (42.4 u%)
+    tran: time = 519.4 ns    (51.9 %), step = 433.6 fs    (43.4 u%)
+    tran: time = 522.8 ns    (52.3 %), step = 346 fs      (34.6 u%)
+    tran: time = 525 ns      (52.5 %), step = 315.7 fs    (31.6 u%)
+    tran: time = 528.4 ns    (52.8 %), step = 366.6 fs    (36.7 u%)
+    tran: time = 531.9 ns    (53.2 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 535.3 ns    (53.5 %), step = 329.4 fs    (32.9 u%)
+    tran: time = 538.7 ns    (53.9 %), step = 322.4 fs    (32.2 u%)
+    tran: time = 542.2 ns    (54.2 %), step = 287.6 fs    (28.8 u%)
+    tran: time = 545.6 ns    (54.6 %), step = 329.3 fs    (32.9 u%)
+    tran: time = 549 ns      (54.9 %), step = 276.6 fs    (27.7 u%)
+    tran: time = 552.4 ns    (55.2 %), step = 345.1 fs    (34.5 u%)
+    tran: time = 555.9 ns    (55.6 %), step = 327 fs      (32.7 u%)
+    tran: time = 559.3 ns    (55.9 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 562.7 ns    (56.3 %), step = 331.7 fs    (33.2 u%)
+    tran: time = 566.1 ns    (56.6 %), step = 321 fs      (32.1 u%)
+    tran: time = 569.5 ns    (56.9 %), step = 287.2 fs    (28.7 u%)
+    tran: time = 572.9 ns    (57.3 %), step = 353.4 fs    (35.3 u%)
+    tran: time = 575 ns      (57.5 %), step = 380.4 fs      (38 u%)
+    tran: time = 578.4 ns    (57.8 %), step = 334.7 fs    (33.5 u%)
+    tran: time = 581.9 ns    (58.2 %), step = 344.5 fs    (34.5 u%)
+    tran: time = 585.3 ns    (58.5 %), step = 281.4 fs    (28.1 u%)
+    tran: time = 588.7 ns    (58.9 %), step = 319.3 fs    (31.9 u%)
+    tran: time = 592.2 ns    (59.2 %), step = 435 fs      (43.5 u%)
+State File: ./input.scs.tran.srf.
+    tran: time = 595.6 ns    (59.6 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 599 ns      (59.9 %), step = 341 fs      (34.1 u%)
+    tran: time = 602.5 ns    (60.2 %), step = 325.8 fs    (32.6 u%)
+    tran: time = 605.9 ns    (60.6 %), step = 322.2 fs    (32.2 u%)
+    tran: time = 609.3 ns    (60.9 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 612.8 ns    (61.3 %), step = 433.8 fs    (43.4 u%)
+    tran: time = 616.1 ns    (61.6 %), step = 361 fs      (36.1 u%)
+    tran: time = 619.5 ns      (62 %), step = 281.6 fs    (28.2 u%)
+    tran: time = 622.9 ns    (62.3 %), step = 425.5 fs    (42.6 u%)
+    tran: time = 625 ns      (62.5 %), step = 305.9 fs    (30.6 u%)
+    tran: time = 628.4 ns    (62.8 %), step = 293.8 fs    (29.4 u%)
+    tran: time = 631.9 ns    (63.2 %), step = 408.8 fs    (40.9 u%)
+    tran: time = 635.3 ns    (63.5 %), step = 322.3 fs    (32.2 u%)
+    tran: time = 638.7 ns    (63.9 %), step = 281.5 fs    (28.1 u%)
+    tran: time = 642.2 ns    (64.2 %), step = 305.1 fs    (30.5 u%)
+    tran: time = 645.6 ns    (64.6 %), step = 380.2 fs      (38 u%)
+    tran: time = 649 ns      (64.9 %), step = 326.8 fs    (32.7 u%)
+    tran: time = 652.5 ns    (65.2 %), step = 319.3 fs    (31.9 u%)
+    tran: time = 655.9 ns    (65.6 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 659.3 ns    (65.9 %), step = 278.3 fs    (27.8 u%)
+    tran: time = 662.8 ns    (66.3 %), step = 294.6 fs    (29.5 u%)
+    tran: time = 666.1 ns    (66.6 %), step = 366.8 fs    (36.7 u%)
+    tran: time = 669.5 ns      (67 %), step = 318 fs      (31.8 u%)
+    tran: time = 672.9 ns    (67.3 %), step = 350.9 fs    (35.1 u%)
+    tran: time = 675 ns      (67.5 %), step = 433.7 fs    (43.4 u%)
+    tran: time = 678.4 ns    (67.8 %), step = 345.8 fs    (34.6 u%)
+    tran: time = 681.9 ns    (68.2 %), step = 274.3 fs    (27.4 u%)
+    tran: time = 685.3 ns    (68.5 %), step = 324.9 fs    (32.5 u%)
+    tran: time = 688.7 ns    (68.9 %), step = 281.4 fs    (28.1 u%)
+    tran: time = 692.2 ns    (69.2 %), step = 425.3 fs    (42.5 u%)
+    tran: time = 695.6 ns    (69.6 %), step = 277.3 fs    (27.7 u%)
+    tran: time = 699 ns      (69.9 %), step = 329 fs      (32.9 u%)
+    tran: time = 702.5 ns    (70.2 %), step = 394.1 fs    (39.4 u%)
+    tran: time = 705.9 ns    (70.6 %), step = 338.7 fs    (33.9 u%)
+    tran: time = 709.3 ns    (70.9 %), step = 307.7 fs    (30.8 u%)
+    tran: time = 712.8 ns    (71.3 %), step = 323.8 fs    (32.4 u%)
+    tran: time = 716.2 ns    (71.6 %), step = 355.3 fs    (35.5 u%)
+    tran: time = 719.5 ns      (72 %), step = 287.4 fs    (28.7 u%)
+    tran: time = 722.9 ns    (72.3 %), step = 325.8 fs    (32.6 u%)
+    tran: time = 725 ns      (72.5 %), step = 278.2 fs    (27.8 u%)
+    tran: time = 728.4 ns    (72.8 %), step = 315.7 fs    (31.6 u%)
+    tran: time = 731.9 ns    (73.2 %), step = 322.4 fs    (32.2 u%)
+    tran: time = 735.3 ns    (73.5 %), step = 287.4 fs    (28.7 u%)
+    tran: time = 738.7 ns    (73.9 %), step = 281.6 fs    (28.2 u%)
+    tran: time = 742.2 ns    (74.2 %), step = 323.7 fs    (32.4 u%)
+    tran: time = 745.6 ns    (74.6 %), step = 303.3 fs    (30.3 u%)
+    tran: time = 749 ns      (74.9 %), step = 318.8 fs    (31.9 u%)
+    tran: time = 752.5 ns    (75.2 %), step = 284.2 fs    (28.4 u%)
+    tran: time = 755.9 ns    (75.6 %), step = 293.8 fs    (29.4 u%)
+    tran: time = 759.3 ns    (75.9 %), step = 317 fs      (31.7 u%)
+    tran: time = 762.8 ns    (76.3 %), step = 322.2 fs    (32.2 u%)
+    tran: time = 766.2 ns    (76.6 %), step = 278.3 fs    (27.8 u%)
+    tran: time = 769.5 ns      (77 %), step = 284.2 fs    (28.4 u%)
+    tran: time = 772.9 ns    (77.3 %), step = 410.8 fs    (41.1 u%)
+    tran: time = 775 ns      (77.5 %), step = 331.6 fs    (33.2 u%)
+    tran: time = 778.4 ns    (77.8 %), step = 276.5 fs    (27.7 u%)
+    tran: time = 781.9 ns    (78.2 %), step = 379.2 fs    (37.9 u%)
+    tran: time = 785.3 ns    (78.5 %), step = 327.1 fs    (32.7 u%)
+    tran: time = 788.7 ns    (78.9 %), step = 311.6 fs    (31.2 u%)
+    tran: time = 792.2 ns    (79.2 %), step = 328.3 fs    (32.8 u%)
+    tran: time = 795.6 ns    (79.6 %), step = 370.1 fs      (37 u%)
+    tran: time = 799 ns      (79.9 %), step = 426.4 fs    (42.6 u%)
+    tran: time = 802.5 ns    (80.2 %), step = 366.4 fs    (36.6 u%)
+    tran: time = 805.9 ns    (80.6 %), step = 433.8 fs    (43.4 u%)
+    tran: time = 809.3 ns    (80.9 %), step = 327 fs      (32.7 u%)
+    tran: time = 812.8 ns    (81.3 %), step = 338.7 fs    (33.9 u%)
+    tran: time = 816.2 ns    (81.6 %), step = 285.3 fs    (28.5 u%)
+    tran: time = 819.5 ns      (82 %), step = 329 fs      (32.9 u%)
+    tran: time = 822.9 ns    (82.3 %), step = 410.9 fs    (41.1 u%)
+    tran: time = 825 ns      (82.5 %), step = 295.2 fs    (29.5 u%)
+    tran: time = 828.4 ns    (82.8 %), step = 318.8 fs    (31.9 u%)
+    tran: time = 831.9 ns    (83.2 %), step = 346 fs      (34.6 u%)
+    tran: time = 835.3 ns    (83.5 %), step = 326.7 fs    (32.7 u%)
+    tran: time = 838.7 ns    (83.9 %), step = 319.1 fs    (31.9 u%)
+    tran: time = 842.2 ns    (84.2 %), step = 274.4 fs    (27.4 u%)
+    tran: time = 845.6 ns    (84.6 %), step = 425.2 fs    (42.5 u%)
+    tran: time = 849 ns      (84.9 %), step = 277.9 fs    (27.8 u%)
+    tran: time = 852.5 ns    (85.2 %), step = 322.6 fs    (32.3 u%)
+    tran: time = 855.9 ns    (85.6 %), step = 345.9 fs    (34.6 u%)
+    tran: time = 859.3 ns    (85.9 %), step = 298.2 fs    (29.8 u%)
+    tran: time = 862.8 ns    (86.3 %), step = 351.4 fs    (35.1 u%)
+    tran: time = 866.2 ns    (86.6 %), step = 333 fs      (33.3 u%)
+    tran: time = 869.6 ns      (87 %), step = 369.6 fs      (37 u%)
+    tran: time = 872.9 ns    (87.3 %), step = 305.7 fs    (30.6 u%)
+    tran: time = 875 ns      (87.5 %), step = 322.4 fs    (32.2 u%)
+    tran: time = 878.4 ns    (87.8 %), step = 319.6 fs      (32 u%)
+    tran: time = 881.9 ns    (88.2 %), step = 380.5 fs      (38 u%)
+    tran: time = 885.3 ns    (88.5 %), step = 394 fs      (39.4 u%)
+    tran: time = 888.7 ns    (88.9 %), step = 338.6 fs    (33.9 u%)
+    tran: time = 892.2 ns    (89.2 %), step = 319.1 fs    (31.9 u%)
+    tran: time = 895.6 ns    (89.6 %), step = 350.1 fs      (35 u%)
+    tran: time = 899 ns      (89.9 %), step = 329.4 fs    (32.9 u%)
+    tran: time = 902.5 ns    (90.2 %), step = 293.8 fs    (29.4 u%)
+    tran: time = 905.9 ns    (90.6 %), step = 298.2 fs    (29.8 u%)
+    tran: time = 909.3 ns    (90.9 %), step = 395 fs      (39.5 u%)
+    tran: time = 912.8 ns    (91.3 %), step = 317 fs      (31.7 u%)
+    tran: time = 916.2 ns    (91.6 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 919.6 ns      (92 %), step = 276.6 fs    (27.7 u%)
+    tran: time = 922.9 ns    (92.3 %), step = 345.1 fs    (34.5 u%)
+    tran: time = 925 ns      (92.5 %), step = 351.4 fs    (35.1 u%)
+    tran: time = 928.4 ns    (92.8 %), step = 329.6 fs      (33 u%)
+    tran: time = 931.9 ns    (93.2 %), step = 308.8 fs    (30.9 u%)
+    tran: time = 935.3 ns    (93.5 %), step = 346 fs      (34.6 u%)
+    tran: time = 938.7 ns    (93.9 %), step = 284.3 fs    (28.4 u%)
+    tran: time = 942.2 ns    (94.2 %), step = 360.8 fs    (36.1 u%)
+    tran: time = 945.6 ns    (94.6 %), step = 364.7 fs    (36.5 u%)
+    tran: time = 949 ns      (94.9 %), step = 350.2 fs      (35 u%)
+    tran: time = 952.5 ns    (95.2 %), step = 434.4 fs    (43.4 u%)
+    tran: time = 955.9 ns    (95.6 %), step = 276 fs      (27.6 u%)
+    tran: time = 959.3 ns    (95.9 %), step = 322.4 fs    (32.2 u%)
+    tran: time = 962.8 ns    (96.3 %), step = 324.9 fs    (32.5 u%)
+    tran: time = 966.2 ns    (96.6 %), step = 351.4 fs    (35.1 u%)
+    tran: time = 969.6 ns      (97 %), step = 288.1 fs    (28.8 u%)
+    tran: time = 972.9 ns    (97.3 %), step = 322.6 fs    (32.3 u%)
+    tran: time = 975 ns      (97.5 %), step = 329.5 fs    (32.9 u%)
+    tran: time = 978.4 ns    (97.8 %), step = 295.2 fs    (29.5 u%)
+    tran: time = 981.9 ns    (98.2 %), step = 329.7 fs      (33 u%)
+    tran: time = 985.3 ns    (98.5 %), step = 380.5 fs      (38 u%)
+    tran: time = 988.7 ns    (98.9 %), step = 294.5 fs    (29.4 u%)
+    tran: time = 992.2 ns    (99.2 %), step = 340.8 fs    (34.1 u%)
+    tran: time = 995.6 ns    (99.6 %), step = 274.3 fs    (27.4 u%)
+    tran: time = 999 ns      (99.9 %), step = 325.6 fs    (32.6 u%)
+Number of accepted tran steps =             3033056
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I52.Vout1) = 740.9 mV
+I: I(V1:p) = 35.39 uA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (4.4 %)       2 (2.7 %)       3 (85.6 %)
+         4 (25.0 %)      5 (2.4 %)       6 (7.7 %)       7 (17.1 %)
+         8 (6.2 %)       9 (1.8 %)      10 (7.2 %)      11 (1.7 %)
+        12 (7.4 %)      13 (1.3 %)      14 (7.2 %)      15 (5.1 %)
+        16 (85.4 %)     17 (85.2 %)     18 (85.2 %)     19 (85.2 %)
+        20 (90.9 %)     21 (98.1 %)     22 (99.7 %)     23 (87.9 %)
+        24 (5.0 %)      25 (2.9 %)      26 (1.7 %)      27 (2.2 %)
+        29 (1.9 %)      30 (2.0 %)      31 (1.3 %)      34 (1.8 %)
+        35 (1.6 %)      36 (87.2 %)     37 (87.2 %)     38 (87.1 %)
+        Total: 1285.3%
+Initial condition solution time: CPU = 19.855 ms, elapsed = 20.2322 ms.
+Intrinsic tran analysis time:    CPU = 2.92851 ks, elapsed = 3.02424 ks.
+Total time required for tran analysis `tran': CPU = 2.92853 ks (48m  48.5s), elapsed = 3.02426 ks (50m  24.3s), util. = 96.8%.
+Time accumulated: CPU = 2.92895 ks (48m  49.0s), elapsed = 3.02468 ks (50m  24.7s).
+Peak resident memory used = 523 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+Licensing Information:
+Lic Summary:
+[22:41:33.156290] Cdslmd servers:5280@license.eecs.uci.edu
+[22:41:33.156321] Feature usage summary:
+[22:41:33.156322] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (10:41:33 PM, Fri Mar 15, 2024):
+Time used: CPU = 2.93 ks (48m  49.0s), elapsed = 3.02 ks (50m  24.7s), util. = 96.8%.
+Time spent in licensing: elapsed = 21.8 ms.
+Peak memory used = 523 Mbytes.
+Simulation started at: 9:51:08 PM, Fri Mar 15, 2024, ended at: 10:41:33 PM, Fri Mar 15, 2024, with elapsed time (wall clock): 3.02 ks (50m  24.7s).
+spectre completes with 0 errors, 0 warnings, and 6 notices.
+
+
+********* LOG ENDS **************
+**                             **

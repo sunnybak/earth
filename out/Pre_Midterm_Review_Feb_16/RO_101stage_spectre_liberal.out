@@ -1,0 +1,395 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.257 64bit -- 9 Oct 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: pingweih   Host: laguna.eecs.uci.edu   HostID: C8801755   PID: 50731
+Memory  available: 2.5409 GB  physical: 134.9236 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1281.9] ( 28 ),  2 [1795.8] ( 30 ),  4 [1252.1] ( 32 )
+                 6 [1282.2] ( 34 ),  8 [1200.6] ( 36 ), 10 [1200.6] ( 38 )
+                12 [1221.2] ( 40 ), 14 [1200.0] ( 42 ), 16 [1218.5] ( 44 )
+                18 [1248.2] ( 46 ), 20 [1200.3] ( 48 ), 22 [1265.6] ( 50 )
+                24 [1200.7] ( 52 ), 26 [1202.3] ( 54 )
+        1:       1 [1200.8] ( 29 ),  3 [1280.8] ( 31 ),  5 [1327.4] ( 33 )
+                 7 [1235.6] ( 35 ),  9 [1251.5] ( 37 ), 11 [1295.7] ( 39 )
+                13 [1250.7] ( 41 ), 15 [1200.4] ( 43 ), 17 [1200.2] ( 45 )
+                19 [1200.4] ( 47 ), 21 [1200.6] ( 49 ), 23 [1200.0] ( 51 )
+                25 [1200.6] ( 53 ), 27 [1200.2] ( 55 )
+        
+System load averages (1min, 5min, 15min) : 0.2 %, 0.2 %, 0.2 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on laguna.eecs.uci.edu at 8:05:11 PM, Wed Feb 14, 2024 (process id: 50731).
+Current working directory: /users/ugrad/pingweih/simulation/RO_101stage_tb/spectre/schematic/netlist
+Command line:
+    /ecelib/linware/cadence/mmsim/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre1_7564_2 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 50731
+
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /users/ugrad/pingweih/simulation/RO_101stage_tb/spectre/schematic/netlist/input.scs
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /users/ugrad/pingweih/EARTH/16nm.sp
+Time for NDB Parsing: CPU = 101.549 ms, elapsed = 365.878 ms.
+Time accumulated: CPU = 150.596 ms, elapsed = 365.888 ms.
+Peak resident memory used = 35.4 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (2.7 %)       2 (2.7 %)       8 (5.4 %)      22 (29.7 %)
+                24 (2.8 %)      30 (45.7 %)     31 (11.1 %)     35 (5.4 %)
+                37 (5.6 %)      44 (2.8 %)      
+        Other   
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 33.832 ms, elapsed = 39.6159 ms.
+Time accumulated: CPU = 184.65 ms, elapsed = 405.724 ms.
+Peak resident memory used = 41.5 Mbytes.
+
+Time for EDB Visiting: CPU = 5.548 ms, elapsed = 5.548 ms.
+Time accumulated: CPU = 190.384 ms, elapsed = 411.456 ms.
+Peak resident memory used = 42.7 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2609): pmos: `Toxe' = 1 nm should be equal to `Toxp + Dtox'.
+Notice from spectre during topology check.
+    Only one connection to node `0'.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 103
+              bsim4 202   
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2609): pmos: `Toxe' = 1 nm should be equal to `Toxp + Dtox'.
+
+Time for parsing: CPU = 6.748 ms, elapsed = 11.5001 ms.
+Time accumulated: CPU = 197.295 ms, elapsed = 423.119 ms.
+Peak resident memory used = 44.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre1_7564_2, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+***********************************************
+Transient Analysis `tran': time = (0 s -> 1 us)
+***********************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    There are 1 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+    Initial condition computed for node VOUT101 is in error by 33.867 uV.
+        Decrease `rforce' to reduce error in computed initial conditions.  However, setting rforce too small may result in convergence difficulties or in the matrix becoming singular.
+
+DC simulation time: CPU = 64.293 ms, elapsed = 64.2931 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1 us
+    step = 1 ns
+    maxstep = 20 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = liberal
+    method = trapgear2
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   2       (current)
+                 save   103     (voltage)
+
+    tran: time = 13.73 ns    (1.37 %), step = 1.461 ps     (146 u%)
+    tran: time = 25 ns        (2.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 39.08 ns    (3.91 %), step = 1.481 ps     (148 u%)
+    tran: time = 53.09 ns    (5.31 %), step = 1.417 ps     (142 u%)
+    tran: time = 66.83 ns    (6.68 %), step = 1.481 ps     (148 u%)
+    tran: time = 75 ns        (7.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 89.07 ns    (8.91 %), step = 1.481 ps     (148 u%)
+    tran: time = 103 ns      (10.3 %), step = 1.481 ps     (148 u%)
+    tran: time = 117.1 ns    (11.7 %), step = 1.481 ps     (148 u%)
+    tran: time = 125 ns      (12.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 138.7 ns    (13.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 152.6 ns    (15.3 %), step = 1.481 ps     (148 u%)
+    tran: time = 166.6 ns    (16.7 %), step = 1.461 ps     (146 u%)
+    tran: time = 175 ns      (17.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 189.1 ns    (18.9 %), step = 1.417 ps     (142 u%)
+    tran: time = 203.1 ns    (20.3 %), step = 1.415 ps     (142 u%)
+    tran: time = 217.2 ns    (21.7 %), step = 1.417 ps     (142 u%)
+    tran: time = 225 ns      (22.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 238.5 ns    (23.9 %), step = 1.461 ps     (146 u%)
+    tran: time = 252.6 ns    (25.3 %), step = 1.417 ps     (142 u%)
+    tran: time = 266.7 ns    (26.7 %), step = 1.481 ps     (148 u%)
+    tran: time = 275 ns      (27.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 289.1 ns    (28.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 303.1 ns    (30.3 %), step = 1.415 ps     (142 u%)
+    tran: time = 316.5 ns    (31.6 %), step = 1.481 ps     (148 u%)
+    tran: time = 325 ns      (32.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 339.1 ns    (33.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 353.2 ns    (35.3 %), step = 1.415 ps     (142 u%)
+    tran: time = 367.2 ns    (36.7 %), step = 1.461 ps     (146 u%)
+    tran: time = 375 ns      (37.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 389.1 ns    (38.9 %), step = 1.415 ps     (142 u%)
+    tran: time = 403.2 ns    (40.3 %), step = 1.417 ps     (142 u%)
+    tran: time = 417.2 ns    (41.7 %), step = 1.415 ps     (142 u%)
+    tran: time = 425 ns      (42.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 439.1 ns    (43.9 %), step = 1.417 ps     (142 u%)
+    tran: time = 453.2 ns    (45.3 %), step = 1.461 ps     (146 u%)
+    tran: time = 467.3 ns    (46.7 %), step = 1.461 ps     (146 u%)
+    tran: time = 475 ns      (47.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 489 ns      (48.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 503.1 ns    (50.3 %), step = 1.461 ps     (146 u%)
+    tran: time = 516.1 ns    (51.6 %), step = 1.481 ps     (148 u%)
+    tran: time = 525 ns      (52.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 539 ns      (53.9 %), step = 1.417 ps     (142 u%)
+    tran: time = 553.1 ns    (55.3 %), step = 1.415 ps     (142 u%)
+    tran: time = 567.1 ns    (56.7 %), step = 1.415 ps     (142 u%)
+    tran: time = 575 ns      (57.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 589.1 ns    (58.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 602.8 ns    (60.3 %), step = 1.417 ps     (142 u%)
+    tran: time = 616.9 ns    (61.7 %), step = 1.415 ps     (142 u%)
+    tran: time = 625 ns      (62.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 639.1 ns    (63.9 %), step = 1.461 ps     (146 u%)
+    tran: time = 652.7 ns    (65.3 %), step = 1.481 ps     (148 u%)
+    tran: time = 666.4 ns    (66.6 %), step = 1.481 ps     (148 u%)
+    tran: time = 675 ns      (67.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 688.7 ns    (68.9 %), step = 1.481 ps     (148 u%)
+    tran: time = 702.2 ns    (70.2 %), step = 1.481 ps     (148 u%)
+    tran: time = 716.1 ns    (71.6 %), step = 1.461 ps     (146 u%)
+    tran: time = 725 ns      (72.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 739.1 ns    (73.9 %), step = 1.415 ps     (142 u%)
+    tran: time = 753.1 ns    (75.3 %), step = 1.415 ps     (142 u%)
+    tran: time = 766.9 ns    (76.7 %), step = 1.481 ps     (148 u%)
+    tran: time = 775 ns      (77.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 788.9 ns    (78.9 %), step = 1.461 ps     (146 u%)
+    tran: time = 801.3 ns    (80.1 %), step = 1.415 ps     (142 u%)
+    tran: time = 814.4 ns    (81.4 %), step = 1.481 ps     (148 u%)
+    tran: time = 825 ns      (82.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 838.2 ns    (83.8 %), step = 1.481 ps     (148 u%)
+    tran: time = 851.4 ns    (85.1 %), step = 1.461 ps     (146 u%)
+    tran: time = 864.8 ns    (86.5 %), step = 1.417 ps     (142 u%)
+    tran: time = 875 ns      (87.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 887.9 ns    (88.8 %), step = 1.417 ps     (142 u%)
+    tran: time = 901.2 ns    (90.1 %), step = 1.461 ps     (146 u%)
+    tran: time = 914.8 ns    (91.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 925 ns      (92.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 938.5 ns    (93.9 %), step = 1.415 ps     (142 u%)
+    tran: time = 952.4 ns    (95.2 %), step = 1.415 ps     (142 u%)
+    tran: time = 965.7 ns    (96.6 %), step = 1.481 ps     (148 u%)
+    tran: time = 975 ns      (97.5 %), step = 1.415 ps     (142 u%)
+    tran: time = 988.2 ns    (98.8 %), step = 1.481 ps     (148 u%)
+Number of accepted tran steps =             692721
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  1 (10.5 %)     21 (89.1 %)     22 (2.8 %)      26 (1.1 %)
+                30 (1.8 %)      
+        Other   
+Initial condition solution time: CPU = 64.348 ms, elapsed = 64.3489 ms.
+Intrinsic tran analysis time:    CPU = 725.448 s, elapsed = 725.624 s.
+Total time required for tran analysis `tran': CPU = 725.52 s (12m  5.5s), elapsed = 725.705 s (12m  5.7s).
+Time accumulated: CPU = 725.808 s (12m  5.8s), elapsed = 728.453 s (12m  8.5s).
+Peak resident memory used = 74.6 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Trying `homotopy = gmin'.
+Continuation method failed. Step size is too small.
+Trying `homotopy = source'.
+Trying `homotopy = dptran'...........
+Step limit exceeded.
+Trying `homotopy = ptran'...........
+Step limit exceeded.
+Trying `homotopy = arclength'.
+None of the instantiated devices support arclength homotopy. Skipping.
+
+Arclength failed after a total of 0 iterations.
+Attempting Newton loop with latest solution.
+
+Error found by spectre during DC analysis `dcOp'.
+    ERROR (SPECTRE-16385): There were 7 attempts to find the DC solution. In some of those attempts, a signal exceeded the blowup limit of its quantity. The last signal that failed is I(V1:p) = 1.80144 GA, for which the quantity is `I' and the blowup limit is (1 GA). It is possible that the circuit has no DC solution. If you really want signals this large, set the `blowup' parameter of this quantity to a larger value.
+    ERROR (SPECTRE-16080): No DC solution found (no convergence).  
+
+The values for those nodes that did not converge on the last Newton iteration are given below.  The manner in which the convergence criteria were not satisfied is also given.
+            Failed test: | Value | > RelTol*Ref + AbsTol
+
+ Top 10 Solution too large Convergence failure:
+    I(V1:p) = 0 A
+        update too large:  | 9.06647 uA | > 0 A + 1 pA
+    V(I2.I27.M0:int_g) = 0 V
+        update too large:  | 300 mV | > 0 V + 1 uV
+    V(I2.I26.M0:int_g) = 0 V
+        update too large:  | -300 mV | > 0 V + 1 uV
+    V(I2.I27.M1:int_g) = 0 V
+        update too large:  | 300 mV | > 0 V + 1 uV
+    V(I2.I26.M1:int_g) = 0 V
+        update too large:  | -300 mV | > 0 V + 1 uV
+    V(I2.net13) = 0 V
+        update too large:  | -300 mV | > 0 V + 1 uV
+    V(I2.net12) = 0 V
+        update too large:  | 300 mV | > 0 V + 1 uV
+    V(I2.net11) = 0 V
+        update too large:  | -103.371 mV | > 0 V + 1 uV
+    V(I2.I28.M1:int_g) = 0 V
+        update too large:  | -103.371 mV | > 0 V + 1 uV
+    V(I2.I28.M0:int_g) = 0 V
+        update too large:  | -103.371 mV | > 0 V + 1 uV
+ Top 10 Residue too large Convergence failure:
+    V(I2.net12) = 0 V
+        residue too large: | 15.6172 uA | > 78.1371 nA + 1 pA
+    V(I2.net11) = 0 V
+        residue too large: | -9.94623 uA | > 49.81 nA + 1 pA
+    V(I2.net10) = 0 V
+        residue too large: | -92.4388 nA | > 462.194 pA + 1 pA
+    V(I2.net13) = 0 V
+        residue too large: | -4.48798 uA | > 23.1362 nA + 1 pA
+    V(I2.net15) = 0 V
+        residue too large: | 13.0815 nA | > 131.162 pA + 1 pA
+    V(VSS) = 0 V
+        residue too large: | -6.65156 uA | > 193.285 nA + 1 pA
+    V(VDD) = 0 V
+        residue too large: | 5.54747 uA | > 199.62 nA + 1 pA
+    V(I2.I28.M0:int_g) = 0 V
+        residue too large: | 20.4302 pA | > 102.151 fA + 1 pA
+    V(I2.I27.M0:int_g) = 0 V
+        residue too large: | -11.0875 pA | > 79.9834 fA + 1 pA
+    V(I2.I27.M1:int_b) = 0 V
+        residue too large: | -7.65195 pA | > 38.2598 fA + 1 pA
+
+
+The following set of suggestions might help you avoid convergence difficulties.  After you have a solution, write it to a nodeset file by using the `write' parameter, and read it back in on subsequent simulations by using the `readns' parameter.
+
+ 1. Evaluate and resolve any notice, warning, or error messages.
+ 2. Perform sanity check on the parameter values by using the parameter range checker (use ``+param param-limits-file'' as a command line argument) and heed any warnings.  Print the minimum and maximum parameter value by using `info' analysis.  Ensure that the bounds given for instance, model, output, temperature-dependent, and operating-point (if possible) parameters are reasonable.
+
+ 3. Check the direction of both independent and dependent current sources. Convergence problems might result if current sources are connected such that they force current backward through diodes.
+
+ 4.  Enable diagnostic messages by setting option `diagnose=detailed'.
+ 5. Small floating resistors connected to high impedance nodes can cause convergence difficulties. Avoid very small floating resistors, particularly small parasitic resistors in semiconductors. Instead, use voltage sources or iprobes to measure current.
+ 6. If you have an estimate of what the solution should be, use nodeset statements or a nodeset file, and set as many nodes as possible.
+ 7. Use realistic device models. Check all component parameters, particularly nonlinear device model parameters, to ensure that they are reasonable.
+ 8. If simulating a bipolar analog circuit, ensure that the region parameter on all transistors and diodes is set correctly.
+ 9. Loosen tolerances, particularly absolute tolerances like `iabstol' (on options statement). If tolerances are set too tight, they might preclude convergence.
+10. Increase the value of gmin (on options statement).
+11. Use numeric pivoting in the sparse matrix factorization by setting `pivotdc=yes' (on options statement). Sometimes, it is also necessary to increase the pivot threshold to a value in the range of 0.1 to 0.5 by using `pivrel' (on options statement).
+12. Try to simplify the nonlinear component models to avoid regions that might contribute to convergence problems in the model.
+13. Divide the circuit into smaller pieces and simulate them individually. However, ensure that the results are close to what they would be if you had simulated the whole circuit.  Use the results to generate nodesets for the whole circuit.
+14. Check the connections to ground. Convergence problems might result if no connections to ground. 
+15. If all else fails, replace the DC analysis with a transient analysis and modify all the independent sources to start at zero and ramp to their DC values. Run transient analysis well beyond the time when all the sources have reached their final value (remember that transient analysis is very cheap when none of the signals in the circuit are changing) and write the final point to a nodeset file. To make transient analysis more efficient, set the integration method to backward Euler (`method=euler') and loosen the local truncation error criteria by increasing `lteratio', say to 50. Occasionally, this approach fails or is very slow because the circuit contains an oscillator.  Often, for finding the dc solution, the oscillation can be eliminated for by setting the minimum capacitance from each node to ground (`cmin') to a large value.
+
+Analysis `dcOp' was terminated prematurely due to an error.
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+Error found by spectre during DC analysis, during info `dcOpInfo'.
+    ERROR (SPECTRE-16041): Analysis was skipped due to inability to compute operating point.
+
+Analysis `dcOpInfo' was terminated prematurely due to an error.
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...

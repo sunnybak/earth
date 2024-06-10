@@ -1,0 +1,364 @@
+
+Spectre (R) Circuit Simulator
+Version 23.1.0.063 64bit -- 10 Jun 2023
+Copyright (C) 1989-2023 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: pingweih   Host: hpc3-14-01   HostID: F00A073A   PID: 2843257
+Memory  available: 186.1667 GB  physical: 201.9309 GB
+Linux   : Rocky Linux release 8.8 (Green Obsidian)
+CPU Type: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
+        Socket: Processors [Frequency]
+        0:       0 [3100.2],  1 [2400.0],  2 [2400.0],  3 [2400.0],  4 [2400.0]
+                 5 [2400.0],  6 [2400.0],  7 [2400.0],  8 [2400.0],  9 [2400.0]
+                10 [2400.0], 11 [2400.0], 12 [2400.0], 13 [2400.0], 14 [2400.0]
+                15 [2400.0], 16 [2400.0], 17 [2400.0], 18 [2400.0], 19 [2578.3]
+        1:      20 [2600.0], 21 [2557.3], 22 [2640.1], 23 [2600.0], 24 [2600.0]
+                25 [2532.9], 26 [2556.4], 27 [2400.0], 28 [2400.0], 29 [2400.0]
+                30 [2400.0], 31 [2400.0], 32 [2400.0], 33 [2400.0], 34 [2400.0]
+                35 [2400.0], 36 [2400.0], 37 [2400.0], 38 [2400.0], 39 [2400.0]
+        
+System load averages (1min, 5min, 15min) : 20.4 %, 20.6 %, 21.3 %
+HPC is enabled
+Affinity is set by user to processors:  0  1  2  3  4  5 
+
+Simulating `input.scs' on hpc3-14-01 at 2:14:22 AM, Mon Apr 8, 2024 (process id: 2843257).
+Current working directory: /data/homezvol1/pingweih/simulation/ring_osc/RO_101stage_tb/maestro/results/maestro/ExplorerRun.0/1/ring_osc_RO_101stage_tb_1/netlist
+Command line:
+    /data/opt/apps/cadence/SPECTRE231/tools.lnx86/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out -format psfxl -raw  \
+        ../psf ++aps -mt +lqtimeout 900 -maxw 5 -maxn 5 -env ade  \
+        +adespetkn=0001089D13A302B663E41FB550AF0DF415A679A322D5069144BF588C12F604E07EF416DC01A319B562BB63D374C8328145A379F21BCE468452DA62F957F74F9258F479D15D9175FF349860D301F91DBB43FD37D344A540FE19A915BE4BA817B258F7629841A241E140A279D136C874D334981FC2AD96C1BD528B0000364C  \
+        +dcopt -ahdllibdir  \
+        /data/homezvol1/pingweih/simulation/ring_osc/RO_101stage_tb/maestro/results/maestro/ExplorerRun.0/sharedData/CDS/ahdl/input.ahdlSimDB  \
+        +logstatus
+
+Simulation Id: FR1afafB2WtNwDll
+Licensing Information:
+[02:14:22.013145] Configured Lic search path (22.01-s002): 5280@license.eecs.uci.edu
+
+Licensing Information:
+[02:14:22.415723] Periodic Lic check successful
+
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /data/opt/apps/cadence/SPECTRE231/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /data/homezvol1/pingweih/simulation/ring_osc/RO_101stage_tb/maestro/results/maestro/ExplorerRun.0/1/ring_osc_RO_101stage_tb_1/netlist/input.scs
+Reading file:  /data/opt/apps/cadence/SPECTRE231/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /data/homezvol1/pingweih/EARTH/16nm.sp
+Time for NDB Parsing: CPU = 71.692 ms, elapsed = 202.989 ms.
+Time accumulated: CPU = 162.235 ms, elapsed = 202.992 ms.
+Peak resident memory used = 153 Mbytes.
+
+Time for Elaboration: CPU = 16.961 ms, elapsed = 17.3788 ms.
+Time accumulated: CPU = 179.273 ms, elapsed = 220.447 ms.
+Peak resident memory used = 161 Mbytes.
+
+
+Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 3.119 ms, elapsed = 3.13616 ms.
+Time accumulated: CPU = 182.468 ms, elapsed = 223.659 ms.
+Peak resident memory used = 163 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+           homotopy = 5
+               gmin = 1e-12
+             rforce = 0.1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+     dc_pivot_check = yes
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 103
+              bsim4 202   
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    1 vsources are shorted because their absolute value is less than or equal to 'vabsshort'.
+    Fast APS enabled.
+
+Time for parsing: CPU = 5.886 ms, elapsed = 6.21891 ms.
+Time accumulated: CPU = 188.424 ms, elapsed = 229.947 ms.
+Peak resident memory used = 167 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+   -   (Fast APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line.
+~~~~~~~~~~~~~~~~~~~~~~
+
+***********************************************
+Transient Analysis `tran': time = (0 s -> 1 us)
+***********************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    There are 1 IC nodes defined.
+
+Trying Fast DC 0 for initial conditions.
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    Initial condition computed for node VOUT101 is in error by 3.38683 uV.
+        Decrease `rforce' to reduce error in computed initial conditions.  However, setting rforce too small may result in convergence difficulties or in the matrix becoming singular.
+
+DC simulation time: CPU = 76.819 ms, elapsed = 77.111 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1 us
+    step = 1 ns
+    maxstep = 10 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative_sigglobal
+    method = gear2only
+    lteratio = 10
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Output and IC/nodeset summary:
+                 save   1       (current)
+                 save   102     (voltage)
+                 ic     1       
+                 save   1       (unitless)
+
+    tran: time = 10.12 ns    (1.01 %), step = 511.3 fs    (51.1 u%)
+    tran: time = 20.6 ns     (2.06 %), step = 459.5 fs      (46 u%)
+    tran: time = 25 ns        (2.5 %), step = 566.9 fs    (56.7 u%)
+    tran: time = 35.37 ns    (3.54 %), step = 507.1 fs    (50.7 u%)
+    tran: time = 45.68 ns    (4.57 %), step = 513.5 fs    (51.4 u%)
+    tran: time = 56.06 ns    (5.61 %), step = 468.5 fs    (46.9 u%)
+    tran: time = 66.42 ns    (6.64 %), step = 465.2 fs    (46.5 u%)
+    tran: time = 75 ns        (7.5 %), step = 520.4 fs      (52 u%)
+    tran: time = 85.23 ns    (8.52 %), step = 467.6 fs    (46.8 u%)
+    tran: time = 95.28 ns    (9.53 %), step = 622.5 fs    (62.2 u%)
+    tran: time = 105.7 ns    (10.6 %), step = 498.2 fs    (49.8 u%)
+    tran: time = 116 ns      (11.6 %), step = 505.5 fs    (50.6 u%)
+    tran: time = 125 ns      (12.5 %), step = 465.8 fs    (46.6 u%)
+    tran: time = 135.3 ns    (13.5 %), step = 546.4 fs    (54.6 u%)
+    tran: time = 145.7 ns    (14.6 %), step = 454.4 fs    (45.4 u%)
+    tran: time = 156 ns      (15.6 %), step = 507.1 fs    (50.7 u%)
+    tran: time = 166.3 ns    (16.6 %), step = 524.2 fs    (52.4 u%)
+    tran: time = 175 ns      (17.5 %), step = 630.7 fs    (63.1 u%)
+    tran: time = 185.4 ns    (18.5 %), step = 566.9 fs    (56.7 u%)
+    tran: time = 195.7 ns    (19.6 %), step = 498.7 fs    (49.9 u%)
+    tran: time = 206.1 ns    (20.6 %), step = 518.5 fs    (51.9 u%)
+    tran: time = 216.6 ns    (21.7 %), step = 520.4 fs      (52 u%)
+    tran: time = 225 ns      (22.5 %), step = 536.1 fs    (53.6 u%)
+    tran: time = 235.4 ns    (23.5 %), step = 510.4 fs      (51 u%)
+    tran: time = 245.7 ns    (24.6 %), step = 467.6 fs    (46.8 u%)
+    tran: time = 256.2 ns    (25.6 %), step = 515 fs      (51.5 u%)
+    tran: time = 266.2 ns    (26.6 %), step = 507.1 fs    (50.7 u%)
+    tran: time = 275 ns      (27.5 %), step = 454.4 fs    (45.4 u%)
+    tran: time = 285.3 ns    (28.5 %), step = 495.4 fs    (49.5 u%)
+    tran: time = 295.7 ns    (29.6 %), step = 518.5 fs    (51.9 u%)
+    tran: time = 306 ns      (30.6 %), step = 498.7 fs    (49.9 u%)
+    tran: time = 316.4 ns    (31.6 %), step = 452.8 fs    (45.3 u%)
+    tran: time = 325 ns      (32.5 %), step = 505.5 fs    (50.6 u%)
+    tran: time = 335.3 ns    (33.5 %), step = 544.2 fs    (54.4 u%)
+    tran: time = 345.4 ns    (34.5 %), step = 584.1 fs    (58.4 u%)
+    tran: time = 355.8 ns    (35.6 %), step = 584.1 fs    (58.4 u%)
+    tran: time = 366.1 ns    (36.6 %), step = 536.1 fs    (53.6 u%)
+    tran: time = 375 ns      (37.5 %), step = 551.9 fs    (55.2 u%)
+    tran: time = 385.4 ns    (38.5 %), step = 566.9 fs    (56.7 u%)
+    tran: time = 395.7 ns    (39.6 %), step = 515 fs      (51.5 u%)
+    tran: time = 406.1 ns    (40.6 %), step = 514.4 fs    (51.4 u%)
+    tran: time = 416.5 ns    (41.6 %), step = 524.2 fs    (52.4 u%)
+    tran: time = 425 ns      (42.5 %), step = 513.5 fs    (51.4 u%)
+    tran: time = 435.3 ns    (43.5 %), step = 515 fs      (51.5 u%)
+    tran: time = 445.6 ns    (44.6 %), step = 532.7 fs    (53.3 u%)
+    tran: time = 456 ns      (45.6 %), step = 498.2 fs    (49.8 u%)
+    tran: time = 466.3 ns    (46.6 %), step = 558.7 fs    (55.9 u%)
+    tran: time = 475 ns      (47.5 %), step = 470.6 fs    (47.1 u%)
+    tran: time = 485.4 ns    (48.5 %), step = 596.6 fs    (59.7 u%)
+    tran: time = 495.8 ns    (49.6 %), step = 524.2 fs    (52.4 u%)
+    tran: time = 505.9 ns    (50.6 %), step = 564.7 fs    (56.5 u%)
+    tran: time = 516.3 ns    (51.6 %), step = 564.7 fs    (56.5 u%)
+    tran: time = 525 ns      (52.5 %), step = 575.1 fs    (57.5 u%)
+    tran: time = 535.4 ns    (53.5 %), step = 502.8 fs    (50.3 u%)
+    tran: time = 545.7 ns    (54.6 %), step = 462.1 fs    (46.2 u%)
+    tran: time = 556.1 ns    (55.6 %), step = 622.5 fs    (62.2 u%)
+    tran: time = 566.5 ns    (56.7 %), step = 452.8 fs    (45.3 u%)
+    tran: time = 575 ns      (57.5 %), step = 526.9 fs    (52.7 u%)
+    tran: time = 585.3 ns    (58.5 %), step = 560.1 fs      (56 u%)
+    tran: time = 595.4 ns    (59.5 %), step = 540.4 fs      (54 u%)
+    tran: time = 605.7 ns    (60.6 %), step = 465.8 fs    (46.6 u%)
+    tran: time = 616.2 ns    (61.6 %), step = 532 fs      (53.2 u%)
+    tran: time = 625 ns      (62.5 %), step = 495.4 fs    (49.5 u%)
+    tran: time = 635.4 ns    (63.5 %), step = 498.7 fs    (49.9 u%)
+    tran: time = 645.8 ns    (64.6 %), step = 625.2 fs    (62.5 u%)
+    tran: time = 656.1 ns    (65.6 %), step = 459.5 fs      (46 u%)
+    tran: time = 666.5 ns    (66.7 %), step = 633.8 fs    (63.4 u%)
+    tran: time = 675 ns      (67.5 %), step = 544.2 fs    (54.4 u%)
+    tran: time = 685.4 ns    (68.5 %), step = 452.8 fs    (45.3 u%)
+    tran: time = 695.7 ns    (69.6 %), step = 587.5 fs    (58.7 u%)
+    tran: time = 706.1 ns    (70.6 %), step = 467.6 fs    (46.8 u%)
+    tran: time = 716.5 ns    (71.6 %), step = 454.4 fs    (45.4 u%)
+    tran: time = 725 ns      (72.5 %), step = 625.1 fs    (62.5 u%)
+    tran: time = 735.5 ns    (73.5 %), step = 511.3 fs    (51.1 u%)
+    tran: time = 745.8 ns    (74.6 %), step = 462.1 fs    (46.2 u%)
+    tran: time = 755.8 ns    (75.6 %), step = 546.4 fs    (54.6 u%)
+    tran: time = 766.3 ns    (76.6 %), step = 482 fs      (48.2 u%)
+    tran: time = 775 ns      (77.5 %), step = 510.4 fs      (51 u%)
+    tran: time = 785.5 ns    (78.5 %), step = 518.5 fs    (51.9 u%)
+    tran: time = 795.7 ns    (79.6 %), step = 566.9 fs    (56.7 u%)
+    tran: time = 806.1 ns    (80.6 %), step = 622.5 fs    (62.2 u%)
+    tran: time = 816.5 ns    (81.6 %), step = 551.9 fs    (55.2 u%)
+    tran: time = 825 ns      (82.5 %), step = 477.1 fs    (47.7 u%)
+    tran: time = 835.4 ns    (83.5 %), step = 558.7 fs    (55.9 u%)
+    tran: time = 845.4 ns    (84.5 %), step = 495.4 fs    (49.5 u%)
+    tran: time = 855.8 ns    (85.6 %), step = 633.8 fs    (63.4 u%)
+    tran: time = 866.2 ns    (86.6 %), step = 546.4 fs    (54.6 u%)
+    tran: time = 875 ns      (87.5 %), step = 596.6 fs    (59.7 u%)
+    tran: time = 885.3 ns    (88.5 %), step = 495.4 fs    (49.5 u%)
+    tran: time = 895.7 ns    (89.6 %), step = 498.7 fs    (49.9 u%)
+    tran: time = 906 ns      (90.6 %), step = 452.2 fs    (45.2 u%)
+    tran: time = 916.5 ns    (91.6 %), step = 518.5 fs    (51.9 u%)
+    tran: time = 925 ns      (92.5 %), step = 587.5 fs    (58.7 u%)
+    tran: time = 935.4 ns    (93.5 %), step = 465.2 fs    (46.5 u%)
+    tran: time = 945.8 ns    (94.6 %), step = 625.1 fs    (62.5 u%)
+    tran: time = 956.2 ns    (95.6 %), step = 575.1 fs    (57.5 u%)
+    tran: time = 966.6 ns    (96.7 %), step = 532 fs      (53.2 u%)
+    tran: time = 975 ns      (97.5 %), step = 514.4 fs    (51.4 u%)
+    tran: time = 985.4 ns    (98.5 %), step = 507.1 fs    (50.7 u%)
+    tran: time = 995.8 ns    (99.6 %), step = 478.8 fs    (47.9 u%)
+Number of accepted tran steps =             1888952
+
+Maximum value achieved for any signal of each quantity: 
+V: V(VOUT51) = 730 mV
+I: I(V1:p) = 35.39 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative_sigglobal, default moderate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     3 (1.0 %)      19 (100.0 %)    20 (100.0 %)
+        21 (100.0 %)    22 (100.0 %)    23 (100.0 %)    24 (100.0 %)
+        25 (100.0 %)    26 (100.0 %)    
+        Total: 905.2%
+Initial condition solution time: CPU = 76.845 ms, elapsed = 77.1379 ms.
+Intrinsic tran analysis time:    CPU = 968.146 s, elapsed = 972.944 s.
+Total time required for tran analysis `tran': CPU = 968.225 s (16m  8.2s), elapsed = 973.024 s (16m  13.0s), util. = 99.5%.
+Time accumulated: CPU = 968.719 s (16m  8.7s), elapsed = 973.564 s (16m  13.6s).
+Peak resident memory used = 626 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Maximum value achieved for any signal of each quantity: 
+V: V(VDD) = 700 mV
+I: I(V1:p) = 177.9 uA
+Convergence achieved in 5 iterations.
+DC simulation time: CPU = 8.373 ms, elapsed = 8.70895 ms.
+Total time required for dc analysis `dcOp': CPU = 8.4 ms, elapsed = 8.73494 ms, util. = 96.2%.
+Time accumulated: CPU = 968.734 s (16m  8.7s), elapsed = 973.58 s (16m  13.6s).
+Peak resident memory used = 626 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+Licensing Information:
+Lic Summary:
+[02:30:36.423544] Cdslmd servers:5280@license.eecs.uci.edu
+[02:30:36.423569] Feature usage summary:
+[02:30:36.423570] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (2:30:36 AM, Mon Apr 8, 2024):
+Time used: CPU = 969 s (16m  8.8s), elapsed = 974 s (16m  13.6s), util. = 99.5%.
+Time spent in licensing: elapsed = 23.1 ms.
+Peak memory used = 626 Mbytes.
+Simulation started at: 2:14:22 AM, Mon Apr 8, 2024, ended at: 2:30:36 AM, Mon Apr 8, 2024, with elapsed time (wall clock): 974 s (16m  13.6s).
+spectre completes with 0 errors, 0 warnings, and 8 notices.

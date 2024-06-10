@@ -1,0 +1,216 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.257 64bit -- 9 Oct 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: pingweih   Host: laguna.eecs.uci.edu   HostID: C8801755   PID: 17441
+Memory  available: 19.0775 GB  physical: 134.9236 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-2660 v4 @ 2.00GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [1200.1] ( 28 ),  2 [1454.1] ( 30 ),  4 [1279.1] ( 32 )
+                 6 [1282.2] ( 34 ),  8 [1274.2] ( 36 ), 10 [1201.8] ( 38 )
+                12 [1259.3] ( 40 ), 14 [1200.4] ( 42 ), 16 [1200.7] ( 44 )
+                18 [1200.1] ( 46 ), 20 [1203.4] ( 48 ), 22 [1200.6] ( 50 )
+                24 [1200.3] ( 52 ), 26 [1200.1] ( 54 )
+        1:       1 [1200.7] ( 29 ),  3 [1449.2] ( 31 ),  5 [1318.1] ( 33 )
+                 7 [1200.7] ( 35 ),  9 [1200.4] ( 37 ), 11 [1200.6] ( 39 )
+                13 [1200.4] ( 41 ), 15 [1200.7] ( 43 ), 17 [1201.0] ( 45 )
+                19 [1200.8] ( 47 ), 21 [1200.9] ( 49 ), 23 [1200.6] ( 51 )
+                25 [1201.5] ( 53 ), 27 [1201.0] ( 55 )
+        
+System load averages (1min, 5min, 15min) : 2.2 %, 2.2 %, 3.1 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on laguna.eecs.uci.edu at 12:35:23 AM, Sun Feb 25, 2024 (process id: 17441).
+Current working directory: /users/ugrad/pingweih/simulation/RO_201stage_tb/spectre/schematic/netlist
+Command line:
+    /ecelib/linware/cadence/mmsim/tools/bin/spectre -64 input.scs  \
+        +escchars +log ../psf/spectre.out -format psfxl -raw ../psf +ms  \
+        +speed=2 +aps +lqtimeout 900 -maxw 5 -maxn 5
+
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /ecelib/linware/cadence/mmsim/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /users/ugrad/pingweih/simulation/RO_201stage_tb/spectre/schematic/netlist/input.scs
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/configs/ms#2.cfg
+Reading file:  /users/ugrad/pingweih/EARTH/16nm.sp
+Time for NDB Parsing: CPU = 164.722 ms, elapsed = 371.663 ms.
+Time accumulated: CPU = 213.044 ms, elapsed = 371.675 ms.
+Peak resident memory used = 41.7 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (2.7 %)       4 (2.6 %)      20 (29.7 %)     22 (13.5 %)
+                24 (2.8 %)      26 (2.7 %)      30 (37.8 %)     31 (8.1 %)
+                33 (5.4 %)      
+        Other   
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /ecelib/linware/cadence/mmsim/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 50.879 ms, elapsed = 53.1251 ms.
+Time accumulated: CPU = 264.192 ms, elapsed = 425.067 ms.
+Peak resident memory used = 48.5 Mbytes.
+
+Starting APS DC ...
+
+
+Warning from spectre in `inv_schematic':`I5.I5', in `inv_50stage_schematic':`I5', during hierarchy flattening.
+    WARNING (CMI-2609): pmos: `Toxe' = 1 nm should be equal to `Toxp + Dtox'.
+Warning from spectre in `inv_schematic':`I4.I5', in `inv_50stage_schematic':`I4', during hierarchy flattening.
+    WARNING (CMI-2609): pmos: `Toxe' = 1 nm should be equal to `Toxp + Dtox'.
+Warning from spectre in `inv_schematic':`I1', during hierarchy flattening.
+    WARNING (CMI-2609): pmos: `Toxe' = 1 nm should be equal to `Toxp + Dtox'.
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-18018): Analyses 'info' are not yet supported in 'Spectre XPS Mixed-signal Mode'.
+    WARNING (SPECTRE-18018): Analyses 'info' are not yet supported in 'Spectre XPS Mixed-signal Mode'.
+    WARNING (SPECTRE-18018): Analyses 'info' are not yet supported in 'Spectre XPS Mixed-signal Mode'.
+    WARNING (SPECTRE-18018): Analyses 'info' are not yet supported in 'Spectre XPS Mixed-signal Mode'.
+    WARNING (SPECTRE-18018): Analyses 'info' are not yet supported in 'Spectre XPS Mixed-signal Mode'.
+        Further occurrences of this warning will be suppressed.
+
+Time for EDB Visiting: CPU = 1.54006 s, elapsed = 1.82053 s.
+Time accumulated: CPU = 2.52546 s, elapsed = 2.24598 s.
+Peak resident memory used = 57.3 Mbytes.
+
+
+Notice from spectre.
+    3 warnings suppressed.
+
+
+Digital Detection Vsource and Virtual Power Supply Node Summary:
+          Type                   #CC         #Bulk       Voltage  Name
+           GND                   201           201             0  0
+       VSOURCE                   201           201           0.7  VDD
+
+            To force a virtual power or ground node, add in netlist
+                      optVPN options ms_vpn=[node_name vpn_voltage]
+                      optVGND options ms_vgnd=[node_name]
+            use keyword auto_vpn if you do not know the vpn_voltage
+
+Warning from spectre.
+    WARNING: No analog partition identified.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+           homotopy = 1
+               gmin = 1e-18
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 203
+              bsim4 402   
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    Multithreading Enabled: 8 threads in the system with 56 available processors.
+    Spectre XPS Mixed-signal Mode Enabled ( speed=2 ).
+
+Time for parsing: CPU = 1.8119 s, elapsed = 2.25324 s.
+Time accumulated: CPU = 2.54239 s, elapsed = 2.2629 s.
+Peak resident memory used = 59.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+   -   MS Table model. VDD=0.7V used for XPS table model creation, to overwrite 
+                 tmopt options vdd=val
+   -   MS Circuit partitions: 100% transistors and 99.5% nodes are identified as digital partitions.
+             One of the following solutions may improve the digital detection.
+                 Manually define internal digital power supply nodes and voltages.
+                        opt1 options ms_vpn=[VDD_DIG 1.2 VDD_DIG1 3.3]
+                        opt2 options ms_vgnd=[VSS]
+                 For complex device models use the MS macro model option.
+                        opt3 options macro_mos=[pmos_subckt nmos_subckt]
+                 Use the cktpreset=digital option to force subcircuits into digital.
+                        opt4 options cktpreset=digital subckt=[subckt_def_name]
+                        opt5 options cktpreset=digital inst=[subckt_inst_name]
+~~~~~~~~~~~~~~~~~~~~~~
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+Warning from spectre.
+    WARNING (SPECTRE-16830): The 'dcOp' analysis of type 'dc' is skipped in XPS flow.
+    WARNING (SPECTRE-16518): Arithmetic exception in analysis `dcOp' .
+
+Total time required for dc analysis `dcOp': CPU = 73 us, elapsed = 72.9561 us.
+Time accumulated: CPU = 2.54292 s, elapsed = 2.26344 s.
+Peak resident memory used = 59.9 Mbytes.
+
+Reading file:  /users/ugrad/pingweih/simulation/RO_201stage_tb/spectre/schematic/netlist/input.apsdc
+
+Warning from spectre during read of ic file `./input.apsdc'.
+    WARNING (SPECTRE-8301): line 9: Unknown node `V1:p' will be ignored.
+    WARNING (SPECTRE-8301): line 12: Unknown node `I1.M0:dbnode' will be ignored.
+    WARNING (SPECTRE-8301): line 13: Unknown node `I1.M0:int_b' will be ignored.
+    WARNING (SPECTRE-8301): line 14: Unknown node `I1.M0:sbnode' will be ignored.
+    WARNING (SPECTRE-8301): line 15: Unknown node `I1.M1:dbnode' will be ignored.
+        Further occurrences of this warning will be suppressed.
+
+
+Wildcard match summary:
+              probe v(*) :               203   
+
+Output and IC/nodeset summary:
+                 probe  203     
+                 ic     1       
+
+Time for dc init: CPU = 13.27 ms, elapsed = 14.1251 ms.
+Time accumulated: CPU = 2.557 s, elapsed = 2.27837 s.
+Peak resident memory used = 60.9 Mbytes.
+
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Time for simulation: CPU = 46.4984 s, elapsed = 46.5838 s.
+Time accumulated: CPU = 49.0556 s, elapsed = 48.8623 s.
+Peak resident memory used = 345 Mbytes.
+
+Total time required for tran analysis `tran': CPU = 46.5127 s, elapsed = 46.5989 s.
+Time accumulated: CPU = 49.0561 s, elapsed = 48.8637 s.
+Peak resident memory used = 345 Mbytes.
+
+
+Notice from spectre.
+    1202 warnings suppressed.
+
+
+Aggregate audit (12:36:13 AM, Sun Feb 25, 2024):
+Time used: CPU = 49.4 s, elapsed = 50 s, util. = 98.9%.
+Time spent in licensing: elapsed = 25.8 ms.
+Peak memory used = 345 Mbytes.
+Simulation started at: 12:35:23 AM, Sun Feb 25, 2024, ended at: 12:36:13 AM, Sun Feb 25, 2024, with elapsed time (wall clock): 50 s.
+spectre completes with 0 errors, 19 warnings, and 8 notices.
